@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { fetchTrendListMovies } from 'services/api';
+import { requestTrendListMovies } from 'services/api';
 import css from './Home.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Home = () => {
   const [movies, setMovies] = useState(null);
+  const location = useLocation();
 
   useEffect(() => {
     const getMovies = async () => {
       try {
-        const movies = await fetchTrendListMovies();
+        const movies = await requestTrendListMovies();
         setMovies(movies);
       } catch (error) {
-        console.log(error.message);
+        toast(error.message);
       }
     };
     getMovies();
@@ -24,7 +26,9 @@ const Home = () => {
       <ul className={css['movies-list']}>
         {movies?.map(movie => (
           <li key={movie.id} className={css['movies-list-item']}>
-            <Link to="/movies">{movie.title}</Link>
+            <Link state={{ from: location }} to={`/movies/${movie.id}`}>
+              {movie.title}
+            </Link>
           </li>
         ))}
       </ul>
