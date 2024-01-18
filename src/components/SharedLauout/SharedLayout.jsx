@@ -7,7 +7,7 @@ const SharedLayout = () => {
     <div className={css.wrapper}>
       <header className={css.header}>
         <div className={css.logo}>
-          <span>🎥 MovieSearch Story</span>
+          <span>🎥 MovieSearch</span>
         </div>
         <nav className={css['nav-list']}>
           <NavLink
