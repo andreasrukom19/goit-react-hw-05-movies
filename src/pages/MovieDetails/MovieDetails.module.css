@@ -1,0 +1,9 @@
+.back-link {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.movie-info-block {
+  display: flex;
+}
