@@ -1,9 +1,89 @@
+.movie-info-block {
+  padding: 0 16px 15px 16px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.back-link-container {
+  padding-left: 16px;
+}
+
 .back-link {
   display: flex;
   gap: 4px;
   align-items: center;
+  outline: 1px solid black;
+  max-width: 80px;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  color: black;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.back-link:hover,
+.back-link:focus {
+  outline-color: orangered;
+  background-color: orangered;
+  color: white;
 }
 
 .movie-info-block {
   display: flex;
+  gap: 10px;
+}
+
+.movie-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.text-block {
+  margin-bottom: 15px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.title-block {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.additional-info-block {
+  padding: 15px 16px;
+}
+
+.additional-info-block-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.info-link-list {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  gap: 10px;;
+}
+
+.info-link {
+  display: inline-block;
+  text-align: center;
+  outline: 1px solid black;
+  color: black;
+  padding: 5px 8px;
+  border-radius: 4px;
+  width: 60px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-link:hover,
+.info-link:focus,
+.info-link:active {
+  background-color: orangered;
+  color: white;
+  outline-color: orangered;
 }
