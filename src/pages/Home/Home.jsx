@@ -21,12 +21,16 @@ const Home = () => {
   }, []);
 
   return (
-    <main>
+    <main className={css.wrapper}>
       <h1 className={css['home-page-title']}>Trending today</h1>
       <ul className={css['movies-list']}>
         {movies?.map(movie => (
           <li key={movie.id} className={css['movies-list-item']}>
-            <Link state={{ from: location }} to={`/movies/${movie.id}`}>
+            <Link
+              className={css['movies-list-item-link']}
+              state={{ from: location }}
+              to={`/movies/${movie.id}`}
+            >
               {movie.title}
             </Link>
           </li>
