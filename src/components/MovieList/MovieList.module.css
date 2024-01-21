@@ -1,0 +1,17 @@
+.movie-list {
+  margin-top: 20px;
+}
+
+.movies-list-item {
+  margin-bottom: 8px;
+}
+
+.movies-list-item-link {
+  color: black;
+}
+
+.movies-list-item-link:hover,
+.movies-list-item-link:focus {
+  text-decoration: underline;
+  color: orangered;
+}
