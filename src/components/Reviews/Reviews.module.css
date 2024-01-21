@@ -1,0 +1,14 @@
+.review-list {
+  padding: 0 16px;
+}
+
+.review-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.review-content {
+  line-height: 1.2;
+  text-align: justify;
+  margin-bottom: 15px;
+}
