@@ -1,21 +1,16 @@
-.wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 8px 0;
+  padding: 8px 16px;
   margin-bottom: 16px;
-  border-bottom: 1px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav-list {
   display: flex;
+  gap: 15px;
 }
 
 .logo {
@@ -29,6 +24,15 @@
   text-decoration: none;
   color: black;
   font-weight: 500;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: orangered;
+  color: white;
+
 }
 
 .active {
