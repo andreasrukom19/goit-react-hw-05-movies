@@ -1,0 +1,23 @@
+.wrapper {
+  padding: 0 16px;
+}
+
+.home-page-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.movies-list-item {
+  margin-bottom: 8px;
+}
+
+.movies-list-item-link {
+  color: black;
+}
+
+.movies-list-item-link:hover,
+.movies-list-item-link:focus {
+  text-decoration: underline;
+  color: orangered;
+}
